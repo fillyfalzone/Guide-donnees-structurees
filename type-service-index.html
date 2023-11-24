@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Données Structuréest</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",           // Contexte du schéma utilisé
+        "@type": "Service",                         // Type de l'objet décrit, ici un Service
+        "serviceType": "Bateau école",              // Type de service offert
+        "provider": {                               // Fournisseur du service, l'école de navigation
+          "@type": "Organization",                  // Type de fournisseur, ici une Organisation
+          "name": "Nom de l'école de navigation",   // Nom officiel de l'école de navigation
+          "image": "https://example.com/logo_ecole.jpg",  // URL vers une image ou logo de l'école
+          "address": {                              // Adresse physique de l'organisation
+            "@type": "PostalAddress",
+            "streetAddress": "Adresse de l'école",
+            "addressLocality": "Ville",
+            "postalCode": "Code Postal",
+            "addressCountry": "Pays"
+          },
+          "review": {                               // Un exemple d'avis sur le service
+            "@type": "Review",
+            "reviewRating": {                       // Évaluation donnée dans l'avis
+              "@type": "Rating",
+              "ratingValue": "5",                   // Note attribuée
+              "bestRating": "5"                     // Meilleure note possible
+            },
+            "author": {                             // Auteur de l'avis
+              "@type": "Person",
+              "name": "Prénom Nom de l'auteur de l'avis"
+            },
+            "reviewBody": "Excellente expérience, les instructeurs sont très compétents et l'environnement d'apprentissage est superbe !", // Contenu de l'avis
+            "datePublished": "2023-01-01"           // Date de publication de l'avis
+          },
+          "aggregateRating": {                      // Évaluation globale pour le service
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",                   // Note moyenne basée sur plusieurs avis
+            "reviewCount": "47"                     // Nombre total d'avis
+          }
+        },
+        "areaServed": {                             // Zone géographique couverte par le service
+          "@type": "GeoCircle",
+          "geoMidpoint": {                          // Point central de la zone desservie
+            "@type": "GeoCoordinates",
+            "latitude": "44.837789",
+            "longitude": "-0.57918"
+          },
+          "geoRadius": "50"                         // Rayon de la zone desservie (en kilomètres)
+        },
+        "hasOfferCatalog": {                        // Catalogue des offres/services disponibles
+          "@type": "OfferCatalog",
+          "name": "Catalogue de cours",
+          "itemListElement": [                      // Liste des offres/services spécifiques
+            {
+              "@type": "Offer",
+              "itemOffered": {                      // Service offert
+                "@type": "Service",
+                "name": "Cours de navigation de base"
+              },
+              "price": "200.00",                    // Prix du service
+              "priceCurrency": "EUR",               // Devise du prix
+              "description": "Apprenez les bases de la navigation maritime." // Description du service
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {                      // Un autre service offert
+                "@type": "Service",
+                "name": "Cours de navigation avancé"
+              },
+              "price": "400.00",                    // Prix du service
+              "priceCurrency": "EUR",               // Devise du prix
+              "description": "Perfectionnez vos compétences de navigation avec des techniques avancées." // Description du service
+            }
+          ]
+        }
+      }
+      </script>
+      
+</head>
+<body>
+    
+</body>
+</html>

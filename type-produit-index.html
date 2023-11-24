@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Données Structuréest</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",        // Contexte du schéma utilisé
+        "@type": "Product",                      // Type de l'objet décrit
+        "name": "Nom du produit",                // Nom du produit
+        "image": "https://example.com/product.jpg", // URL de l'image du produit
+        "description": "Description du produit", // Description du produit
+        "sku": "SKU12345",                       // Stock Keeping Unit, identifiant unique du produit
+        "mpn": "MPN12345",                       // Manufacturer Part Number, identifiant unique donné par le fabricant
+        "brand": {                               // Marque du produit
+          "@type": "Brand",
+          "name": "Nom de la marque"             // Nom de la marque
+        },
+        "review": {                              // Section décrivant un avis spécifique
+          "@type": "Review",
+          "reviewRating": {                      // La note donnée dans cet avis
+            "@type": "Rating",
+            "ratingValue": "4",                  // Valeur de la note, sur une échelle de 1 à 5 ici
+            "bestRating": "5"                    // La meilleure note possible sur l'échelle utilisée
+          },
+          "author": {                            // Auteur de l'avis
+            "@type": "Person",
+            "name": "Nom de l'auteur"            // Nom de l'auteur de l'avis
+          },
+          "reviewBody": "C'est un produit fantastique ! J'ai particulièrement aimé...", // Le texte de l'avis
+          "datePublished": "2023-01-01"          // La date de publication de l'avis
+        },
+        "aggregateRating": {                     // Évaluation globale basée sur plusieurs avis
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",                  // Note moyenne pour le produit
+          "reviewCount": "89"                    // Nombre total d'avis pris en compte pour la note moyenne
+        },
+        "offers": {                              // Information sur l'offre de vente du produit
+          "@type": "Offer",
+          "url": "https://example.com/product",  // URL de la page du produit
+          "priceCurrency": "EUR",                // Devise de l'offre
+          "price": "19.99",                      // Prix du produit
+          "priceValidUntil": "2024-01-01",       // Date jusqu'à laquelle le prix est valide
+          "itemCondition": "https://schema.org/NewCondition", // Condition de l'article (neuf, d'occasion, etc.)
+          "availability": "https://schema.org/InStock",       // Disponibilité du produit
+          "seller": {                            // Informations sur le vendeur
+            "@type": "Organization",
+            "name": "Nom du vendeur"             // Nom de l'organisation ou de la personne vendant le produit
+          }
+        }
+      }  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
